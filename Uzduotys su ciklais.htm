@@ -10,13 +10,13 @@
     <script>
          //CIKLAI
        
-       1.
+       //1.
 
         // for(let i = 1; i <= 5; i++){
         //     console.log("Labas");
         // }
 
-        2. 
+        //2. 
 
         // let i = 0;
         // while (i <= 4) { 
@@ -28,31 +28,31 @@
         //     console.log( i )
         // }
 
-        3. 
+        //3. 
 
         // for(let i = 0; i < 50; i+=10){ //i= i + 10
         //     console.log( i )
         // }
 
-        4.
+        //4.
 
         // for(let i = 49; i <= 53; i++){
         //     console.log( i )
         // }
 
-        5.
+        //5.
 
         // for(let i = 4; i >= 0; i--){
         //     console.log( i )
         // }
 
-        6.
+        //6.
 
         // for(let i = 0; i < 5; i++){
         //     console.log(Math.floor(Math.random()*(10+1)))
         // }
 
-        7.
+        //7.
 
         // let i;
         // while (i != 5){
@@ -60,7 +60,7 @@
         //     console.log(i)
         // }
 
-        8. 
+        //8. 
 
         // let i = 0;
         // while ( i <= 100 ){
@@ -69,7 +69,7 @@
         //    i += f;
         // }
 
-        9.
+        //9.
 
         // let i , f ;
         // while (i !== 5 && i !== 7){
@@ -79,7 +79,7 @@
         // }
         // console.log("Ivyko ciklu" +  i ) 
 
-        10.
+        //10.
 
         // let x = 2.54;
         // let y = n * x;
@@ -91,7 +91,7 @@
         //     console.log(n + " cm yra " + y + " col")
         // }
 
-        11.
+        //11.
 
         // let i = 100, p = 0.02, n = 20, a = 1;
         // while(a<=n){
@@ -100,7 +100,7 @@
         //     a++;
         // }
 
-        12.
+        //12.
 
         // let x = 10, y = 0, z = 0, w = 0;
         // while(x != w + 36 || 3 * y != z){
@@ -111,7 +111,7 @@
         // }
         // console.log(x)
 
-        13.
+        //13.
 
         // let n = 999, d = 0;
         // while( n < 10000 && d % 2 == 0 && n % 998 != 0){
@@ -120,7 +120,7 @@
         // }
         // console.log(n)
 
-        // 14. Rasti musu eros keliamuosius metus
+        //14. Rasti musu eros keliamuosius metus
 
         //     let x = 0; 
         //     while( x < 2022){
@@ -134,7 +134,7 @@
         //     }
         //    console.log(x)
 
-        // 15. Pigesni bilietai
+        //15. Pigesni bilietai
 
         // let m = 997; n = 1003;
         // while(m < n){
@@ -144,7 +144,7 @@
         //     m++;
         // }
 
-        16.
+        //16.
 
         // let n = 4939492 , x;
         // while( n > 9){
@@ -157,7 +157,7 @@
         // }
 
 
-        17.
+        //17.
 
         // let n = 495 , x = 0;
         // while( n > 0 ){
@@ -166,7 +166,7 @@
         // }
         // console.log(x);
 
-        18. // rasti atvirskcia skaiciu
+        //18. // rasti atvirskcia skaiciu
 
         // let num = 1234789687884843 , x = 0, y ;
         // while(num > 0){
@@ -187,19 +187,56 @@
         // }
         // console.log(Number(reverse_a_number(32222)));
 
-        19.
+        //19.
 
-        let num = 456 , n = num, x , y, number;
-        while( n >= 1 )
-        number = n % 10;
-        num = Math.floor(n / 10);
-        if ( x <= number ){
-            x = number; 
+        // let n = 54344668887789, x = n, num = 0 , max = 0, min = 10;
+        // while( x >= 1 ){
+        //     num = x % 10;
+        //     console.log(num);
+        //     x = Math.floor(x / 10);
+        //     if ( max <= num ){
+        //         max = num; 
+        //     }
+        //     if ( min >= num){
+        //         min = num;
+        //     }
+        // }    
+        // console.log("Skaiciaus " + n + " didziausias " + max + " maziausias " + min);
+
+        20.
+        // let pal = 25, ind = 100 , x = ind, met = 0 ;
+        // while(x < 100000){
+        //     x += x * (pal/100);
+        //     met++;
+        // }
+        // console.log("Indelis taps didesnis po " + met + "metu")
+
+        21.
+        // let z = 1, n = 0, p = 40;
+        // while(n < 20){
+        //     z = z*2;
+        //     n++;
+        // }
+        // console.log(z)
+
+        // while(z<(p/2)){
+        //     z = z*2;
+        //     n++;
+        // }
+        // console.log("Ziedai uzklojo puse ezero " + n + " diena")
+
+        22.
+        let m1 = 3, m = 1, n = 16, d = 1;
+        while(m1 == n || m1 < n){
+            n = n - (m1 + (m * d));
+            d++
         }
-        if ( y >= number){
-            y = number;
-        }
-        console.log("Skaiciaus " + num + " max " + x + " min " + y);
+        console.log("Sodininkas genes " + d + " dienas.")
+
+
+
+
+    
     </script>
 </body>
 </html>
