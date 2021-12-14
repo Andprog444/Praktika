@@ -8,7 +8,140 @@
 </head>
 <body>
     <script>
+        // 1. Sugeneruoti masyva is 30 elementu 5>>>25
+
+        let n = [];
+        for(let i = 0; i < 30; i++){
+            n[i] = Math.floor(Math.random()*(25-5+1)+5);
+        }
+        console.log(n);
         
+
+        // 2a reiksmes > 10;
+
+        let daugiau10 = 0;
+        let nilgis = n.length;
+        for(i=0; i < nilgis; i++){
+            if(n[i] > 10){
+                daugiau10++;
+            }
+        }
+        console.log(daugiau10);
+
+        // 2b rasti didziausia reiksme ir jos indeksa
+
+        let maxR = 0;
+        let maxI = [];
+        for(i = 0; i < nilgis; i++){
+            if(n[i] > maxR){
+                maxR = n[i];
+            }
+        }
+        for(i = 0; i < nilgis; i++){
+            if(n[i] == maxR){
+                maxI.push(i);
+            }
+        }
+        console.log("Didziausia reiksme " + maxR);
+        console.log("Reiksmiu indeksai " + maxI);
+
+        //2c
+        let indexsum = 0;
+        for(i = 0; i < nilgis; i+=2){
+                indexsum += i;
+        }
+        console.log("Lyginiu suma " + indexsum);
+
+        //2d
+
+        let skirtumas = [];
+        for(i = 0; i < nilgis; i++){
+            skirtumas.push(n[i] - i)
+        } 
+        console.log("Pradinis masyvas minus indeksai " + skirtumas)
+
+        //2e
+
+        for(i = 0; i < 10; i++){
+            n.push(Math.floor(Math.random()*(25-5+1)+5));
+        }
+        console.log("Papildytas pradinis masyvas " + n)
+
+        for(i = nilgis; i < nilgis + 10; i++){
+            n[i] = Math.floor(Math.random()*(25-5+1)+5);
+
+        }
+        console.log("Papildytas pradinis masyvas " + n)
+
+        //2f
+
+        let por = [];
+        let npor = [];
+        for(i = 0; i < n.length; i++){
+            if (i % 2 == 0){
+                por.push(n[i])
+            }else{
+                npor.push(n[i])
+            }
+        }
+        console.log("Lyginiu " + por) 
+        console.log("Nelyginiu " + npor)
+
+        for(i = 0; i < n.length; i+=2){
+            por.push(n[i])
+        }
+        for(i = 0; i < n.length; i+=2){
+            npor.push(n[i])
+        }
+        console.log("Lyginiu " + por) 
+        console.log("Nelyginiu " + npor)       
+               
+
+        //2g
+
+        for(i=0; i< nilgis; i+=2){
+            if(n[i] > 15){
+                n[i] = 0;
+            }
+        }
+        
+        for(i=0; i< nilgis; i++){
+            if(i % 2 === 0 && n[i]>15){
+                    n[i] = 0;
+            }
+        }
+        console.log(n)
+
+        //2f
+        let minI = -1;
+        for(i=0; i < nilgis; i++){
+            if(n[i] > 10){
+                minI = i;
+                break;
+            }
+        }
+        console.log("Maziausias indeksas " + minI)
+    
+        for(i = nilgis; i >= -1; i--){
+            if(n[i] > 10){
+                minI = i;
+            }
+        }    
+        console.log("Maziausias indeksas " + minI);
+
+
+
+
+
+        
+        
+           
+        
+        
+
+
+
+
     </script>
 </body>
 </html>
